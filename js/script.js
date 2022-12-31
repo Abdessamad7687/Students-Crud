@@ -113,7 +113,7 @@ function showData() {
     }
 }
 
-/*
+ /*
   * delete  function
   *
   */
@@ -152,6 +152,10 @@ function Edit(id) {
     console.log(newItem)
 
     items[tmp] = newItem
+    /*
+    * Update array in localstorage
+    *
+    */
     localStorage.setItem("items", JSON.stringify(items))
 }
 
